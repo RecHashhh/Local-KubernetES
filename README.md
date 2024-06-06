@@ -1,6 +1,6 @@
 # BookStore
 
-Sample Kubernetes application
+Sample Kubernetes application With Docker - Redes y Sistemas
 
 ```mermaid
 flowchart TD
@@ -32,19 +32,12 @@ flowchart TD
 ```
 
 
-Initially was created to play with OpenTelementry Operator, but may be useful for other experiments in future
 
-> Note: services are ment to be as small as possible and contain some silly mistakes
+## Run as LocalHost
 
-## Local
-
-Each service has its own docker compose, so may be run in isolation
-
-Also there is global docker compose to run everything at once
+Each service has its own docker compose.
 
 For kubernetes there are prepared manifests in kubernetes folder
-
-> Note: there is no tricks around dependencies, so after applying manifests for kubernetes there is a huge chanse you gonna need to restart services that started before databases
 
 ## Endpoints
 
@@ -55,8 +48,3 @@ Services are so simple that there is no need to describe each endpoint and it sh
 - `http://localhost:3000/v1/books/2/reviews`
 - `http://localhost:8080/v1/books/2/votes`
 
-## OpenTelemetry Operator
-
-![sceenshot](opentelemetry-operator/screenshot.png)
-
-in corresponding directory there is an step by step example of how to get up and running open telemetry operator
